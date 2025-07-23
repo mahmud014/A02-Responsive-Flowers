@@ -128,6 +128,35 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px 20px;
+  margin-bottom: 120px;
+}
+
+/* flower-plants-lover section */
+.flower-plants-lover {
+  max-width: 1140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.flower-plants-lover-right {
+  max-width: 540px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.flower-plants-lover-right h2 {
+  font-family: var(--body-title-font);
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700px;
+}
+.flower-plants-lover-right ul {
+  padding-left: 20px;
+}
+.flower-plants-lover-right li {
+  max-width: 540px;
+  margin-bottom: 20px;
+  color: var(--body-text-color);
 }
 /* responsive media */
 @media screen and (max-width: 576px) {
@@ -149,6 +178,13 @@ header {
     font-weight: 700;
   }
   .hero-details {
-    margin: 28px 16px 65px 16px;
+    margin: 28px 16px 30px 16px;
+  }
+  .section-head {
+    padding: 10px;
+    margin-top: 0;
+  }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
