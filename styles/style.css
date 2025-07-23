@@ -72,3 +72,27 @@ header {
   font-family: var(--body-text-font);
   color: #00000080;
 }
+
+/* responsive media */
+@media screen and (max-width: 576px) {
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px 16px 28px;
+  }
+  .nav-item {
+    visibility: hidden;
+    flex-direction: column;
+  }
+  /* hero */
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .hero-details {
+    margin: 28px 16px 65px 16px;
+  }
+}
