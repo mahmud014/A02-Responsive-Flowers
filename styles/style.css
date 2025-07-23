@@ -1,14 +1,25 @@
 * {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   font-family: "Inter", sans-serif;
   font-family: "Noto Serif", serif;
+  box-sizing: border-box;
 }
 
 :root {
   --body-text-font: "Inter", sans-serif;
   --body-title-font: "Noto Serif", serif;
+  --body-text-color: #00000080;
 }
+.btn {
+  background-color: #e95a08;
+  width: 270px;
+  height: 50px;
+  color: white;
+  font-family: var(--body-text-font);
+  border: none;
+}
+
 /* Navigation bar */
 header {
   max-width: 1140px;
@@ -70,9 +81,54 @@ header {
 }
 .hero-details p {
   font-family: var(--body-text-font);
-  color: #00000080;
+  color: var(--body-text-color);
 }
 
+/* Our plants section */
+.our-plant {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.section-head {
+  text-align: center;
+}
+.section-head h2 {
+  font-family: var(--body-title-font);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.section-head p {
+  font-family: var(--body-text-font);
+  color: var(--body-text-color);
+  margin-bottom: 49px;
+  max-width: 888px;
+}
+.card-flower {
+  text-align: center;
+  width: 270px;
+  height: 484.94px;
+}
+.card-flower img {
+  margin-bottom: 30px;
+}
+.card-flower h4 {
+  font-family: var(--body-text-font);
+  font-size: 1.2rem;
+  font-weight: 500px;
+  margin-bottom: 20px;
+}
+.card-flower h3 {
+  font-family: var(--body-text-font);
+  font-size: 1.2rem;
+  font-weight: 700px;
+  margin-bottom: 20px;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px 20px;
+}
 /* responsive media */
 @media screen and (max-width: 576px) {
   .navbar {
