@@ -108,6 +108,7 @@ header {
   text-align: center;
   width: 270px;
   height: 484.94px;
+  position: relative;
 }
 .card-flower img {
   margin-bottom: 30px;
@@ -128,7 +129,7 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px 20px;
-  margin-bottom: 120px;
+  margin-bottom: 220px;
 }
 
 /* flower-plants-lover section */
@@ -139,6 +140,7 @@ header {
   align-items: center;
   gap: 60px;
   margin-bottom: 120px;
+  position: relative;
 }
 .flower-plants-lover-right {
   max-width: 540px;
@@ -158,6 +160,14 @@ header {
   max-width: 540px;
   margin-bottom: 20px;
   color: var(--body-text-color);
+}
+.badge {
+  position: absolute;
+  width: 286px;
+  height: 286px;
+  left: 740px;
+  transform: translateY(-120px);
+  z-index: 1;
 }
 /* challenge section */
 .challenge-section {
@@ -278,6 +288,7 @@ footer {
   margin-top: 15px;
   color: var(--body-text-color);
 }
+
 /* responsive media */
 @media screen and (max-width: 576px) {
   .navbar {
