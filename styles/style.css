@@ -138,6 +138,7 @@ header {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
+  margin-bottom: 120px;
 }
 .flower-plants-lover-right {
   max-width: 540px;
@@ -158,6 +159,66 @@ header {
   margin-bottom: 20px;
   color: var(--body-text-color);
 }
+/* challenge section */
+.challenge-section {
+  max-width: 1140px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+}
+.left-card-1 {
+  background-image: url(../images/deal-bloom.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  border-radius: 8px;
+  height: 206px;
+  position: relative;
+}
+.left-card-2 {
+  background-image: url(../images/deal-zabo.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  border-radius: 8px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
+  height: 100%;
+  position: relative;
+}
+.right-card {
+  background-image: url(../images/deal-ana.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  border-radius: 8px;
+  position: relative;
+}
+.deals-text {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.deals-text h3 {
+  font-size: 2rem;
+  font-weight: 600px;
+}
+.deals-text a {
+  font-size: 1.5rem;
+  font-weight: 600px;
+  color: white;
+}
 /* responsive media */
 @media screen and (max-width: 576px) {
   .navbar {
@@ -177,6 +238,9 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
   }
+  .hero p {
+    font-size: 14px;
+  }
   .hero-details {
     margin: 28px 16px 30px 16px;
   }
@@ -184,7 +248,37 @@ header {
     padding: 10px;
     margin-top: 0;
   }
+  .section-head h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .section-head p {
+    font-size: 14px;
+  }
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .flower-plants-lover {
+    flex-direction: column;
+    gap: 28px;
+  }
+  .flower-plants-lover img {
+    margin-bottom: 28px;
+    display: block;
+    max-width: 420px;
+    height: auto;
+  }
+  .flower-plants-lover-right {
+    padding: 20px;
+  }
+  .flower-plants-lover-right h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .flower-plants-lover-right p {
+    font-size: 14px;
+  }
+  .challenge-section {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
