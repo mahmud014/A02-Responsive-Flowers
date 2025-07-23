@@ -4,11 +4,17 @@
   font-family: "Inter", sans-serif;
   font-family: "Noto Serif", serif;
 }
+
+:root {
+  --body-text-font: "Inter", sans-serif;
+  --body-title-font: "Noto Serif", serif;
+}
 /* Navigation bar */
 header {
   max-width: 1140px;
   margin: 0 auto;
   margin-top: 30px;
+  margin-bottom: 120px;
 }
 .navbar {
   display: flex;
@@ -32,7 +38,7 @@ header {
 .navbar a {
   text-decoration: none;
   color: #8987a1;
-  font-family: "Inter", sans-serif;
+  font-family: var(--body-text-font);
 }
 .home a {
   color: #252432;
@@ -40,4 +46,29 @@ header {
 }
 .cart a {
   color: black;
+}
+/* hero section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  max-width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+}
+.hero img {
+  display: block;
+}
+.hero-details h1 {
+  font-family: var(--body-title-font);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.title-design {
+  color: #e95a08;
+}
+.hero-details p {
+  font-family: var(--body-text-font);
+  color: #00000080;
 }
