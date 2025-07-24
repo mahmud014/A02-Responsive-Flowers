@@ -68,6 +68,7 @@ header {
 }
 .hero img {
   display: block;
+  width: 100%;
 }
 .hero-details h1 {
   font-family: var(--body-title-font);
@@ -141,6 +142,10 @@ header {
   margin-bottom: 120px;
   position: relative;
 }
+.flower-plants-lover img {
+  width: 100%;
+}
+
 .flower-plants-lover-right {
   max-width: 540px;
   padding-top: 38px;
@@ -162,10 +167,10 @@ header {
 }
 .badge {
   position: absolute;
-  width: 286px;
+  max-width: 286px;
   height: 286px;
-  top: -20%;
-  left: 32%;
+  top: -19%;
+  left: 30%;
 }
 /* challenge section */
 .challenge-section {
@@ -343,7 +348,7 @@ footer {
   .flower-plants-lover img {
     margin-bottom: 28px;
     display: block;
-    max-width: 420px;
+    max-width: 100%;
     height: auto;
   }
   .flower-plants-lover-right {
@@ -376,7 +381,7 @@ footer {
     height: 180px;
   }
   .join-section {
-    max-width: 500px;
+    max-width: 100%;
     height: 275px;
     display: flex;
     justify-content: center;
