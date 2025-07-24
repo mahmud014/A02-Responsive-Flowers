@@ -107,7 +107,6 @@ header {
   text-align: center;
   width: 100%;
   height: auto;
-  border: 3px solid salmon;
 }
 .card-flower img {
   width: 100%;
@@ -130,7 +129,6 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px 20px;
   margin-bottom: 220px;
-  border: 2px solid saddlebrown;
 }
 
 /* flower-plants-lover section */
@@ -307,6 +305,7 @@ footer {
   /* hero */
   .hero {
     flex-direction: column-reverse;
+    margin-bottom: 120px;
   }
   .hero h1 {
     font-size: 1.5rem;
@@ -331,13 +330,15 @@ footer {
   }
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 120px;
   }
   .card-flower h4 {
     margin-bottom: 10px;
   }
   .flower-plants-lover {
     flex-direction: column;
-    gap: 28px;
+    gap: 15px;
+    margin-bottom: 60px;
   }
   .flower-plants-lover img {
     margin-bottom: 28px;
@@ -356,7 +357,23 @@ footer {
     font-size: 14px;
   }
   .challenge-section {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .left-card-2 {
+    grid-column: auto;
+    grid-row: auto;
+    height: 180px;
+  }
+  .left-card-1 {
+    grid-column: auto;
+    grid-row: auto;
+    height: 180px;
+  }
+  .right-card {
+    grid-column: auto;
+    grid-row: auto;
+    height: 180px;
   }
   .join-section {
     max-width: 500px;
@@ -365,6 +382,7 @@ footer {
     justify-content: center;
     align-items: center;
     position: relative;
+    margin-bottom: 50px;
   }
   .join-text {
     width: 415px;
@@ -376,7 +394,7 @@ footer {
   .join-text input {
     width: 76%;
     margin: 0;
-    padding: 0;
+    padding: 10px;
   }
   .join-text h2 {
     font-size: 1.5rem;
@@ -386,7 +404,7 @@ footer {
     height: 50px;
   }
   footer {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: 1fr;
     text-align: justify;
     padding-left: 10px;
     padding-right: 10px;
