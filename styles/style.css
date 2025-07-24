@@ -14,7 +14,7 @@
 }
 .btn {
   background-color: #e95a08;
-  width: 270px;
+  width: 100%;
   height: 50px;
   color: white;
   font-family: var(--body-text-font);
@@ -24,7 +24,6 @@
 /* Navigation bar */
 header {
   max-width: 1140px;
-  margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 120px;
 }
@@ -33,7 +32,6 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-
 .navbar ul {
   display: flex;
   justify-content: space-between;
@@ -107,11 +105,12 @@ header {
 }
 .card-flower {
   text-align: center;
-  width: 270px;
-  height: 484.94px;
-  position: relative;
+  width: 100%;
+  height: auto;
+  border: 3px solid salmon;
 }
 .card-flower img {
+  width: 100%;
   margin-bottom: 30px;
 }
 .card-flower h4 {
@@ -131,6 +130,7 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px 20px;
   margin-bottom: 220px;
+  border: 2px solid saddlebrown;
 }
 
 /* flower-plants-lover section */
@@ -166,9 +166,8 @@ header {
   position: absolute;
   width: 286px;
   height: 286px;
-  left: 35%;
-  transform: translateY(-120px);
-  z-index: 1;
+  top: -20%;
+  left: 32%;
 }
 /* challenge section */
 .challenge-section {
@@ -317,7 +316,7 @@ footer {
     font-size: 14px;
   }
   .hero-details {
-    margin: 28px 16px 30px 16px;
+    margin: 28px 16px 0px 16px;
   }
   .section-head {
     padding: 10px;
@@ -332,6 +331,9 @@ footer {
   }
   .card-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card-flower h4 {
+    margin-bottom: 10px;
   }
   .flower-plants-lover {
     flex-direction: column;
@@ -357,27 +359,30 @@ footer {
     grid-template-columns: repeat(1, 1fr);
   }
   .join-section {
-    width: 100%;
+    max-width: 500px;
+    height: 275px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   .join-text {
-    /* width: 415px; */
-    /* height: 141px; */
-    align-items: center;
-    width: 100%;
+    width: 415px;
+    height: 141px;
+    align-content: center;
+    position: absolute;
+    transform: translateY(50%);
   }
   .join-text input {
-    width: 218px;
+    width: 76%;
     margin: 0;
     padding: 0;
   }
   .join-text h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .join-text .btn {
-    width: 80px;
+    width: 100px;
     height: 50px;
   }
   footer {
@@ -393,6 +398,6 @@ footer {
     margin-left: 0px;
   }
   .badge {
-    display: none;
+    visibility: hidden;
   }
 }
